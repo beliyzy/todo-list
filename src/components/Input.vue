@@ -3,7 +3,7 @@
     <span>{{ label }}</span>
     <input
         :value="value"
-        @input="$emit('input', $event.target.value)"
+        @input="$emit('input', $event.target.value.trim())"
     >
   </label>
 </template>
